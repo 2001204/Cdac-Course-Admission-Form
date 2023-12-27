@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>CDAC Admission Form</title>
+    <style>
+        body {
+            background-color: #f8bbe5; /* Sky Blue */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1, h3 {
+            margin: 0;
+        }
+
+        .marquee {
+            text-align: center;
+            color: #008080; /* Teal */
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333; /* Dark Gray */
+        }
+
+        textarea,
+        input[type="text"],
+        input[type="date"] {
+            width: calc(100% - 16px);
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 8px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px;
+            background-color: #3aa1a3; /* Green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover{
+            background-color: #106bfd;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #f60000;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            label, input, textarea {
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+</head>
+<body bgcolor="sky blue">
+    <div class="container">
+        <header>
+            <img src="https://cdac.in/index.aspx?id=img_Mumbai-cb" height="150px" width="800px">
+
+           
+            <h1>Centre for Development of Advanced Computing <br> (C-DAC), Mumbai</h1>
+        </header>
+        <hr>
+        <h3 class="marquee">Student Admission Form</h3>
+        <form action="#" method="post" class="admission-form">
+            <table>
+           <b>
+                <tr>
+                    <td><b>FIRST NAME</td>
+                    <td><input type="text" name="First_Name"/></td>
+                </tr>
+
+                
+                <tr>
+                <td><b>LAST NAME</td>
+                         <td><input type="text" name="Last_Name"/>
+                </td>
+                </tr>
+                
+                <tr>
+                <td><b>DATE OF BIRTH</td>
+                         <td><input type="date" id="birthday" name="birthday"></td>
+                </tr>
+
+                <tr>
+                <td><b>EMAIL ID</td>
+                        <td><input type="text" name="Email_Id" maxlength="100" /></td>
+                </tr>
+                
+                <tr>
+                <td><b>MOBILE NUMBER</td>
+                        <td><input type="text" name="country code"  value="+91" size="1"/>
+                        <input type="text" name="Mobile_Number" maxlength="10" />
+                        (10 digit number)
+                </td>
+                </tr>
+                <tr>
+                <td><b>GENDER</td>
+                    <td>
+                    <b>Male <input type="radio" name="Gender" value="Male" />
+                    <b>Female <input type="radio" name="Gender" value="Female" />
+                        <b>Other <input type="radio" name="Gender" value="Other" />
+                </td>
+                </tr>
+                
+                <tr>
+                <td><b>ADDRESS <br /><br /><br /></td>
+                <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+                </tr>
+                
+                <tr>
+                <td><b>CITY</td>
+                            <td><input type="text" name="City" maxlength="30" />
+                        (max 30 characters a-z and A-Z)
+                </td>
+                </tr>
+
+                <tr>
+                <td><b>PIN CODE</td>
+                        <td><input type="text" name="Pin_Code" maxlength="6" />
+                (6 digit number)
+                </td>
+                </tr>
+
+                <tr>
+                <td><b>STATE</td>
+                        <td><input type="text" name="State" maxlength="30" />
+                     (max 30 characters a-z and A-Z)
+                </td>
+                </tr>
+                
+                <tr>
+                         <td><b>COUNTRY</td>
+                <td><input type="text" name="Country" value="India" 
+
+                readonly="readonly" /></td>
+                </tr>
+                
+                <tr>
+                <td><b>HOBBIES <br /><br /><br /></td>
+                
+                <td>
+                        <b>Reading
+                        <input type="checkbox" name="Hobby_Drawing" value="Drawing" />
+                        <b>Traveling
+                        <input type="checkbox" name="Hobby_Singing" value="Singing" />
+                        <b>Browsing Net
+                        <input type="checkbox" name="Hobby_Dancing" value="Dancing" />
+                        <b>Coding
+                        <input type="checkbox" name="Hobby_Cooking" value="Cooking" />
+                <br />
+              <p><input type="checkbox" name="Hobby_Other" value="Other"><input type="text" name="Other_Hobby" maxlength="30" placeholder="Others" />
+
+              </p> 
+                </td>
+                </tr>
+                
+                <td><b>QUALIFICATION </td>
+                
+                <td>
+                <table border="1">
+                
+                <tr>
+                        <td align="center"><b>Sr.No.</b></td>
+                        <td align="center"><b>Examination</b></td>
+                        <td align="center"><b>Board</b></td>
+                        <td align="center"><b>Percentage</b></td>
+                        <td align="center"><b>Year of Passing</b></td>
+                </tr>
+                
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><input type="text" name="ClassX_Board" maxlength="30" 
+
+                /></td>
+                <td><input type="text" name="ClassX_Percentage" maxlength="30" /></td>
+                <td><input type="text" name="ClassX_YrOfPassing" maxlength="30" /></td>
+                </tr>
+                
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><input type="text" name="ClassXII_Board" maxlength="30" /></td>
+                <td><input type="text" name="ClassXII_Percentage" maxlength="30" /></td>
+                         <td><input type="text" name="ClassXII_YearOfPassing" maxlength="30" /></td>
+                </tr>
+                
+                <tr>
+                        <td>3</td>
+                        <td>Graduation</td>
+                        <td><input type="text" name="Graduation_Board" maxlength="30" 
+
+                /></td>
+                <td><input type="text" name="Graduation_Percentage" maxlength="30" /></td>
+                <td><input type="text" name="Graduation_YrOfPassing" maxlength="30" /></td>
+                </tr>
+                
+                <tr>
+                        <td>4</td>
+                        <td>Masters</td>
+                        <td><input type="text" name="Masters_Board" maxlength="30" 
+
+                /></td>
+                <td><input type="text" name="Masters_Percentage" maxlength="30" /></td>
+                <td><input type="text" name="Masters_YrOfPassing" maxlength="30" /></td>
+                </tr>
+                
+                </table>
+                
+                </td>
+                </tr>
+                
+                <tr>
+                <td><b>COURSES <br>APPLIED FOR</td>
+                <td>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma In Advanced Computing"> Post Graduate Diploma In Advanced Computing <br>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma in Big Data Analytics"> Post Graduate Diploma in Big Data Analytics<br>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma in Artificial Intelligence"> Post Graduate Diploma in Artificial Intelligence<br>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma in Mobile Computing"> Post Graduate Diploma in Mobile Computing<br>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma in VLSI Design    "> Post Graduate Diploma in VLSI Design    <br>
+                    <input type="radio" name="Course_cdac" value="Post Graduate Diploma in Robotics & Allied Technologies"> Post Graduate Diploma in Robotics & Allied Technologies<br>
+                </td>
+                </tr>
+                <hr>
+
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+</b>
+<hr><center>
+    &copy; 2023 Designed by | Dipak_Wani
+</center>
+
+        </form>
+    </div>
+</body>
+</html>
+
